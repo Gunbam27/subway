@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:provider/provider.dart';
+import 'package:subway/ui/subway_view_model.dart';
 
+import '../data/api/subway_api.dart';
+import '../data/repository/subway_repository_impl.dart';
 import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -21,8 +25,15 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future.delayed(Duration(seconds: 3));
     Navigator.pushAndRemoveUntil(
       context,
-      MaterialPageRoute(builder: (context) => HomeScreen()),
-          (Route<dynamic> route) => false, // 뒤로가기버튼 비활성
+      MaterialPageRoute(
+          builder: (context) => ChangeNotifierProvider(
+                create: (_) => SubWayViewModel(
+                    repository: SubwayRepositoryImpl(
+                  subwayApi: SubwayApi(),
+                )),
+                child: HomeScreen(),
+              )),
+      (Route<dynamic> route) => false, // 뒤로가기버튼 비활성
     );
   }
 

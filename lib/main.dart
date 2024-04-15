@@ -24,16 +24,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:
+      home:SplashScreen(),
 
-     ChangeNotifierProvider(
-       create: (_) =>SubWayViewModel(
-         repository: SubwayRepositoryImpl(
-           subwayApi: SubwayApi(),
-         )
-       ),
-       child: HomeScreen(),
-     )
     );
   }
 }

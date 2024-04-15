@@ -3,11 +3,6 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:subway/data/dto/subway_dto.dart';
 
-void main() async {
-  final api = await SubwayApi().getSubwayResults('서울')
-    ..forEach(print);
-}
-
 class SubwayApi {
   final _baseUrl =
       "http://swopenapi.seoul.go.kr/api/subway/sample/json/realtimeStationArrival/0/5/";

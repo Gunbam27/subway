@@ -3,6 +3,12 @@ import 'package:subway/data/mapper/subway_mapper.dart';
 import 'package:subway/data/model/subway_model.dart';
 import 'package:subway/data/repository/subway_repository.dart';
 
+void main() async {
+  final result =
+      await SubwayRepositoryImpl(subwayApi: SubwayApi()).getInfo('서울');
+  print(result);
+}
+
 class SubwayRepositoryImpl implements SubwayRepository {
   final SubwayApi _subwayApi;
 
@@ -12,8 +18,7 @@ class SubwayRepositoryImpl implements SubwayRepository {
 
   @override
   Future<List<SubwayModel>> getInfo(String query) async {
-    final result = await _subwayApi.getSubwayResults(query);
-    print(result.toSubway());
-    return result.toSubway();
+    final results = await _subwayApi.getSubwayResults(query);
+    return results.map((result) => result.toSubway()).toList();
   }
 }

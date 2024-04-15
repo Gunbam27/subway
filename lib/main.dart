@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:subway/ui/home_scree.dart';
+import 'package:subway/ui/home_screen.dart';
 
 void main() {
   runApp(const MyApp());

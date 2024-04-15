@@ -1,6 +1,6 @@
 # subway
 
-A new Flutter project.add
+A new Flutter project.
 
 ## Getting Started
 

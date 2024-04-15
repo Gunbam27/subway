@@ -5,6 +5,14 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('지하철 역 검색'),
+
+      ),
+      body: Center(
+
+      ),
+    );
   }
 }

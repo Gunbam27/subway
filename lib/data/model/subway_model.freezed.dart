@@ -24,13 +24,13 @@ mixin _$SubwayModel {
   String get statnNm => throw _privateConstructorUsedError; //지하철역명
   String get trainLineNm =>
       throw _privateConstructorUsedError; //(도착지방면 목적지역 - 다음역)
-  int get tmsitCo => throw _privateConstructorUsedError; //(환승노선수)
-  int get reptnDt => throw _privateConstructorUsedError; //(열차도착정보를 생성한 시각)
-  String get avlMsg2 =>
+  int get trnsitCo => throw _privateConstructorUsedError; //(환승노선수)
+  int get recptnDt => throw _privateConstructorUsedError; //(열차도착정보를 생성한 시각)
+  String get arvlMsg2 =>
       throw _privateConstructorUsedError; //(첫번째 도착메세지: 도착 ,출발,진입 등)
-  String get avlMsg3 =>
+  String get arvlMsg3 =>
       throw _privateConstructorUsedError; //(두번째 도착 메세지: 종합운동작 도착 12분 후)
-  int get avlCd => throw _privateConstructorUsedError;
+  int get arvlCd => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -48,11 +48,11 @@ abstract class $SubwayModelCopyWith<$Res> {
       {int statnId,
       String statnNm,
       String trainLineNm,
-      int tmsitCo,
-      int reptnDt,
-      String avlMsg2,
-      String avlMsg3,
-      int avlCd});
+      int trnsitCo,
+      int recptnDt,
+      String arvlMsg2,
+      String arvlMsg3,
+      int arvlCd});
 }
 
 /// @nodoc
@@ -71,11 +71,11 @@ class _$SubwayModelCopyWithImpl<$Res, $Val extends SubwayModel>
     Object? statnId = null,
     Object? statnNm = null,
     Object? trainLineNm = null,
-    Object? tmsitCo = null,
-    Object? reptnDt = null,
-    Object? avlMsg2 = null,
-    Object? avlMsg3 = null,
-    Object? avlCd = null,
+    Object? trnsitCo = null,
+    Object? recptnDt = null,
+    Object? arvlMsg2 = null,
+    Object? arvlMsg3 = null,
+    Object? arvlCd = null,
   }) {
     return _then(_value.copyWith(
       statnId: null == statnId
@@ -90,25 +90,25 @@ class _$SubwayModelCopyWithImpl<$Res, $Val extends SubwayModel>
           ? _value.trainLineNm
           : trainLineNm // ignore: cast_nullable_to_non_nullable
               as String,
-      tmsitCo: null == tmsitCo
-          ? _value.tmsitCo
-          : tmsitCo // ignore: cast_nullable_to_non_nullable
+      trnsitCo: null == trnsitCo
+          ? _value.trnsitCo
+          : trnsitCo // ignore: cast_nullable_to_non_nullable
               as int,
-      reptnDt: null == reptnDt
-          ? _value.reptnDt
-          : reptnDt // ignore: cast_nullable_to_non_nullable
+      recptnDt: null == recptnDt
+          ? _value.recptnDt
+          : recptnDt // ignore: cast_nullable_to_non_nullable
               as int,
-      avlMsg2: null == avlMsg2
-          ? _value.avlMsg2
-          : avlMsg2 // ignore: cast_nullable_to_non_nullable
+      arvlMsg2: null == arvlMsg2
+          ? _value.arvlMsg2
+          : arvlMsg2 // ignore: cast_nullable_to_non_nullable
               as String,
-      avlMsg3: null == avlMsg3
-          ? _value.avlMsg3
-          : avlMsg3 // ignore: cast_nullable_to_non_nullable
+      arvlMsg3: null == arvlMsg3
+          ? _value.arvlMsg3
+          : arvlMsg3 // ignore: cast_nullable_to_non_nullable
               as String,
-      avlCd: null == avlCd
-          ? _value.avlCd
-          : avlCd // ignore: cast_nullable_to_non_nullable
+      arvlCd: null == arvlCd
+          ? _value.arvlCd
+          : arvlCd // ignore: cast_nullable_to_non_nullable
               as int,
     ) as $Val);
   }
@@ -126,11 +126,11 @@ abstract class _$$SubwayModelImplCopyWith<$Res>
       {int statnId,
       String statnNm,
       String trainLineNm,
-      int tmsitCo,
-      int reptnDt,
-      String avlMsg2,
-      String avlMsg3,
-      int avlCd});
+      int trnsitCo,
+      int recptnDt,
+      String arvlMsg2,
+      String arvlMsg3,
+      int arvlCd});
 }
 
 /// @nodoc
@@ -147,11 +147,11 @@ class __$$SubwayModelImplCopyWithImpl<$Res>
     Object? statnId = null,
     Object? statnNm = null,
     Object? trainLineNm = null,
-    Object? tmsitCo = null,
-    Object? reptnDt = null,
-    Object? avlMsg2 = null,
-    Object? avlMsg3 = null,
-    Object? avlCd = null,
+    Object? trnsitCo = null,
+    Object? recptnDt = null,
+    Object? arvlMsg2 = null,
+    Object? arvlMsg3 = null,
+    Object? arvlCd = null,
   }) {
     return _then(_$SubwayModelImpl(
       statnId: null == statnId
@@ -166,25 +166,25 @@ class __$$SubwayModelImplCopyWithImpl<$Res>
           ? _value.trainLineNm
           : trainLineNm // ignore: cast_nullable_to_non_nullable
               as String,
-      tmsitCo: null == tmsitCo
-          ? _value.tmsitCo
-          : tmsitCo // ignore: cast_nullable_to_non_nullable
+      trnsitCo: null == trnsitCo
+          ? _value.trnsitCo
+          : trnsitCo // ignore: cast_nullable_to_non_nullable
               as int,
-      reptnDt: null == reptnDt
-          ? _value.reptnDt
-          : reptnDt // ignore: cast_nullable_to_non_nullable
+      recptnDt: null == recptnDt
+          ? _value.recptnDt
+          : recptnDt // ignore: cast_nullable_to_non_nullable
               as int,
-      avlMsg2: null == avlMsg2
-          ? _value.avlMsg2
-          : avlMsg2 // ignore: cast_nullable_to_non_nullable
+      arvlMsg2: null == arvlMsg2
+          ? _value.arvlMsg2
+          : arvlMsg2 // ignore: cast_nullable_to_non_nullable
               as String,
-      avlMsg3: null == avlMsg3
-          ? _value.avlMsg3
-          : avlMsg3 // ignore: cast_nullable_to_non_nullable
+      arvlMsg3: null == arvlMsg3
+          ? _value.arvlMsg3
+          : arvlMsg3 // ignore: cast_nullable_to_non_nullable
               as String,
-      avlCd: null == avlCd
-          ? _value.avlCd
-          : avlCd // ignore: cast_nullable_to_non_nullable
+      arvlCd: null == arvlCd
+          ? _value.arvlCd
+          : arvlCd // ignore: cast_nullable_to_non_nullable
               as int,
     ));
   }
@@ -197,11 +197,11 @@ class _$SubwayModelImpl implements _SubwayModel {
       {required this.statnId,
       required this.statnNm,
       required this.trainLineNm,
-      required this.tmsitCo,
-      required this.reptnDt,
-      required this.avlMsg2,
-      required this.avlMsg3,
-      required this.avlCd});
+      required this.trnsitCo,
+      required this.recptnDt,
+      required this.arvlMsg2,
+      required this.arvlMsg3,
+      required this.arvlCd});
 
   factory _$SubwayModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$SubwayModelImplFromJson(json);
@@ -216,23 +216,23 @@ class _$SubwayModelImpl implements _SubwayModel {
   final String trainLineNm;
 //(도착지방면 목적지역 - 다음역)
   @override
-  final int tmsitCo;
+  final int trnsitCo;
 //(환승노선수)
   @override
-  final int reptnDt;
+  final int recptnDt;
 //(열차도착정보를 생성한 시각)
   @override
-  final String avlMsg2;
+  final String arvlMsg2;
 //(첫번째 도착메세지: 도착 ,출발,진입 등)
   @override
-  final String avlMsg3;
+  final String arvlMsg3;
 //(두번째 도착 메세지: 종합운동작 도착 12분 후)
   @override
-  final int avlCd;
+  final int arvlCd;
 
   @override
   String toString() {
-    return 'SubwayModel(statnId: $statnId, statnNm: $statnNm, trainLineNm: $trainLineNm, tmsitCo: $tmsitCo, reptnDt: $reptnDt, avlMsg2: $avlMsg2, avlMsg3: $avlMsg3, avlCd: $avlCd)';
+    return 'SubwayModel(statnId: $statnId, statnNm: $statnNm, trainLineNm: $trainLineNm, trnsitCo: $trnsitCo, recptnDt: $recptnDt, arvlMsg2: $arvlMsg2, arvlMsg3: $arvlMsg3, arvlCd: $arvlCd)';
   }
 
   @override
@@ -244,17 +244,21 @@ class _$SubwayModelImpl implements _SubwayModel {
             (identical(other.statnNm, statnNm) || other.statnNm == statnNm) &&
             (identical(other.trainLineNm, trainLineNm) ||
                 other.trainLineNm == trainLineNm) &&
-            (identical(other.tmsitCo, tmsitCo) || other.tmsitCo == tmsitCo) &&
-            (identical(other.reptnDt, reptnDt) || other.reptnDt == reptnDt) &&
-            (identical(other.avlMsg2, avlMsg2) || other.avlMsg2 == avlMsg2) &&
-            (identical(other.avlMsg3, avlMsg3) || other.avlMsg3 == avlMsg3) &&
-            (identical(other.avlCd, avlCd) || other.avlCd == avlCd));
+            (identical(other.trnsitCo, trnsitCo) ||
+                other.trnsitCo == trnsitCo) &&
+            (identical(other.recptnDt, recptnDt) ||
+                other.recptnDt == recptnDt) &&
+            (identical(other.arvlMsg2, arvlMsg2) ||
+                other.arvlMsg2 == arvlMsg2) &&
+            (identical(other.arvlMsg3, arvlMsg3) ||
+                other.arvlMsg3 == arvlMsg3) &&
+            (identical(other.arvlCd, arvlCd) || other.arvlCd == arvlCd));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, statnId, statnNm, trainLineNm,
-      tmsitCo, reptnDt, avlMsg2, avlMsg3, avlCd);
+      trnsitCo, recptnDt, arvlMsg2, arvlMsg3, arvlCd);
 
   @JsonKey(ignore: true)
   @override
@@ -275,11 +279,11 @@ abstract class _SubwayModel implements SubwayModel {
       {required final int statnId,
       required final String statnNm,
       required final String trainLineNm,
-      required final int tmsitCo,
-      required final int reptnDt,
-      required final String avlMsg2,
-      required final String avlMsg3,
-      required final int avlCd}) = _$SubwayModelImpl;
+      required final int trnsitCo,
+      required final int recptnDt,
+      required final String arvlMsg2,
+      required final String arvlMsg3,
+      required final int arvlCd}) = _$SubwayModelImpl;
 
   factory _SubwayModel.fromJson(Map<String, dynamic> json) =
       _$SubwayModelImpl.fromJson;
@@ -291,15 +295,15 @@ abstract class _SubwayModel implements SubwayModel {
   @override //지하철역명
   String get trainLineNm;
   @override //(도착지방면 목적지역 - 다음역)
-  int get tmsitCo;
+  int get trnsitCo;
   @override //(환승노선수)
-  int get reptnDt;
+  int get recptnDt;
   @override //(열차도착정보를 생성한 시각)
-  String get avlMsg2;
+  String get arvlMsg2;
   @override //(첫번째 도착메세지: 도착 ,출발,진입 등)
-  String get avlMsg3;
+  String get arvlMsg3;
   @override //(두번째 도착 메세지: 종합운동작 도착 12분 후)
-  int get avlCd;
+  int get arvlCd;
   @override
   @JsonKey(ignore: true)
   _$$SubwayModelImplCopyWith<_$SubwayModelImpl> get copyWith =>

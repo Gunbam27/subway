@@ -11,11 +11,11 @@ _$SubwayModelImpl _$$SubwayModelImplFromJson(Map<String, dynamic> json) =>
       statnId: json['statnId'] as int,
       statnNm: json['statnNm'] as String,
       trainLineNm: json['trainLineNm'] as String,
-      tmsitCo: json['tmsitCo'] as int,
-      reptnDt: json['reptnDt'] as int,
-      avlMsg2: json['avlMsg2'] as String,
-      avlMsg3: json['avlMsg3'] as String,
-      avlCd: json['avlCd'] as int,
+      trnsitCo: json['trnsitCo'] as int,
+      recptnDt: json['recptnDt'] as int,
+      arvlMsg2: json['arvlMsg2'] as String,
+      arvlMsg3: json['arvlMsg3'] as String,
+      arvlCd: json['arvlCd'] as int,
     );
 
 Map<String, dynamic> _$$SubwayModelImplToJson(_$SubwayModelImpl instance) =>
@@ -23,9 +23,9 @@ Map<String, dynamic> _$$SubwayModelImplToJson(_$SubwayModelImpl instance) =>
       'statnId': instance.statnId,
       'statnNm': instance.statnNm,
       'trainLineNm': instance.trainLineNm,
-      'tmsitCo': instance.tmsitCo,
-      'reptnDt': instance.reptnDt,
-      'avlMsg2': instance.avlMsg2,
-      'avlMsg3': instance.avlMsg3,
-      'avlCd': instance.avlCd,
+      'trnsitCo': instance.trnsitCo,
+      'recptnDt': instance.recptnDt,
+      'arvlMsg2': instance.arvlMsg2,
+      'arvlMsg3': instance.arvlMsg3,
+      'arvlCd': instance.arvlCd,
     };

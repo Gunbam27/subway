@@ -43,10 +43,14 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Colors.white,
       body: Center(
         child: Lottie.asset(
-          'assets/subway_2.json',
-          fit: BoxFit.fill,
+          'assets/train.json',
+          height: 200,
+          width: 200,
+          fit: BoxFit.contain,
+
         ),
       ),
     );
   }
+
 }
